@@ -18,7 +18,6 @@ for (const envPath of envPaths) {
 
 const express = require('express');
 const cors = require('cors');
-const fs = require('fs');
 const generateRouter = require('./routes/generate');
 
 const app = express();
