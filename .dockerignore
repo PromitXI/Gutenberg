@@ -1,0 +1,13 @@
+.git
+.gitignore
+node_modules
+**/node_modules
+**/dist
+outputs
+uploads
+.env
+**/.env
+npm-debug.log*
+*.log
+README.md
+docs

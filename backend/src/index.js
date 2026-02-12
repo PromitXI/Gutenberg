@@ -18,6 +18,7 @@ for (const envPath of envPaths) {
 
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
 const generateRouter = require('./routes/generate');
 
 const app = express();
@@ -27,6 +28,12 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Serve compiled frontend (for single-container deployments like Cloud Run)
+const frontendDistPath = path.resolve(__dirname, '../../frontend-dist');
+if (fs.existsSync(frontendDistPath)) {
+  app.use(express.static(frontendDistPath));
+}
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -39,6 +46,14 @@ app.get('/api/health', (req, res) => {
 
 // Routes
 app.use('/api', generateRouter);
+
+// SPA fallback for frontend routes
+if (fs.existsSync(frontendDistPath)) {
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    return res.sendFile(path.join(frontendDistPath, 'index.html'));
+  });
+}
 
 // Error handling middleware
 app.use((err, req, res, next) => {
