@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Cloud files illustration">
+  <defs>
+    <linearGradient id="fileBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6f9ff"/>
+      <stop offset="1" stop-color="#edf2fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="28" fill="url(#fileBg)"/>
+  <path d="M188 226c-29 0-52-22-52-50 0-26 20-47 46-50 9-33 40-57 77-57 44 0 79 34 80 77 3 0 7-1 10-1 31 0 56 24 56 54 0 15-6 29-16 39h-201z" fill="#dfe8f8"/>
+  <rect x="134" y="178" width="118" height="146" rx="14" fill="#ffffff" stroke="#d0dcf4" stroke-width="3"/>
+  <path d="M217 178v30h35" fill="#f4f8ff"/>
+  <path d="M217 178v30h35" stroke="#c7d7f2" stroke-width="3"/>
+  <rect x="162" y="232" width="64" height="10" rx="5" fill="#d7e1f4"/>
+  <rect x="162" y="252" width="49" height="10" rx="5" fill="#d7e1f4"/>
+  <rect x="162" y="272" width="58" height="10" rx="5" fill="#d7e1f4"/>
+  <rect x="272" y="152" width="118" height="172" rx="14" fill="#ffffff" stroke="#d0dcf4" stroke-width="3"/>
+  <rect x="300" y="200" width="64" height="10" rx="5" fill="#d7e1f4"/>
+  <rect x="300" y="220" width="49" height="10" rx="5" fill="#d7e1f4"/>
+  <rect x="300" y="240" width="58" height="10" rx="5" fill="#d7e1f4"/>
+  <rect x="410" y="194" width="118" height="130" rx="14" fill="#0a2a57"/>
+  <rect x="438" y="236" width="58" height="10" rx="5" fill="#f5f8ff"/>
+  <rect x="438" y="256" width="44" height="10" rx="5" fill="#f5f8ff"/>
+  <circle cx="468" cy="214" r="12" fill="#f2a500"/>
+</svg>

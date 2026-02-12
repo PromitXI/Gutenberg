@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Gutenberg circular icon">
+  <defs>
+    <radialGradient id="baseGlow" cx="50%" cy="52%" r="58%">
+      <stop offset="0%" stop-color="#1d5dbe"/>
+      <stop offset="60%" stop-color="#112a73"/>
+      <stop offset="100%" stop-color="#0a153f"/>
+    </radialGradient>
+    <linearGradient id="petalA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7de3f2"/>
+      <stop offset="100%" stop-color="#2a85d8"/>
+    </linearGradient>
+    <linearGradient id="petalB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8e86ff"/>
+      <stop offset="100%" stop-color="#4b56df"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="112" fill="url(#baseGlow)"/>
+  <circle cx="120" cy="120" r="106" fill="none" stroke="#334488" stroke-width="5"/>
+  <ellipse cx="120" cy="165" rx="90" ry="28" fill="#0d225d" opacity="0.7"/>
+  <path d="M120 170 C97 138 80 115 63 84 C88 96 103 106 120 132 Z" fill="url(#petalA)"/>
+  <path d="M120 170 C143 138 160 115 177 84 C152 96 137 106 120 132 Z" fill="url(#petalB)"/>
+  <path d="M120 170 C100 132 91 92 90 54 C108 73 115 88 120 121 Z" fill="url(#petalA)"/>
+  <path d="M120 170 C140 132 149 92 150 54 C132 73 125 88 120 121 Z" fill="url(#petalB)"/>
+  <path d="M120 170 C104 134 104 98 109 63 C119 78 121 93 120 122 Z" fill="#63d5ef"/>
+  <path d="M120 170 C136 134 136 98 131 63 C121 78 119 93 120 122 Z" fill="#7a7df7"/>
+</svg>

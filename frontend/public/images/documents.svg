@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Document stack illustration">
+  <defs>
+    <linearGradient id="docBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="28" fill="url(#docBg)"/>
+  <rect x="122" y="90" width="270" height="250" rx="16" fill="#ffffff" stroke="#d8e1f3" stroke-width="3"/>
+  <rect x="148" y="126" width="168" height="14" rx="7" fill="#d6deee"/>
+  <rect x="148" y="154" width="202" height="10" rx="5" fill="#e3e9f5"/>
+  <rect x="148" y="176" width="182" height="10" rx="5" fill="#e3e9f5"/>
+  <rect x="148" y="198" width="144" height="10" rx="5" fill="#e3e9f5"/>
+  <rect x="414" y="132" width="112" height="158" rx="14" fill="#0a2a57"/>
+  <rect x="430" y="168" width="58" height="10" rx="5" fill="#f6f9ff"/>
+  <rect x="430" y="190" width="76" height="10" rx="5" fill="#f6f9ff"/>
+  <rect x="430" y="212" width="64" height="10" rx="5" fill="#f6f9ff"/>
+  <circle cx="470" cy="144" r="12" fill="#f2a500"/>
+  <path d="M182 262h154" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M182 286h121" stroke="#9fb3d6" stroke-width="8" stroke-linecap="round"/>
+</svg>

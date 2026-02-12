@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: radial-gradient(circle at 12% 8%, #d7e9ff 0%, #edf3ff 38%, #f6f7fb 100%);
+  color: #0f172a;
+}
+
+.apple-page {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.glyphic-shell {
+  background: #efede8;
+}
+
+.glyphic-stage {
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(255, 255, 255, 0.85), transparent 45%),
+    radial-gradient(circle at 85% 5%, rgba(255, 255, 255, 0.8), transparent 42%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+.glyphic-for {
+  font-family: "Bradley Hand", "Segoe Script", "Lucida Handwriting", cursive;
+  font-size: 0.82em;
+  font-weight: 700;
+  color: #0b2b58;
+  transform: rotate(-4deg);
+}
+
+.rotating-role {
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.role-blue {
+  color: #2f9dde;
+}
+
+.role-yellow {
+  color: #e0ac18;
+}
+
+.role-greenblue {
+  background: linear-gradient(90deg, #00b9d2, #2d7fc6, #3abf7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.role-india {
+  background: linear-gradient(90deg, #ff7a18 0%, #ff3d81 52%, #7b61ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.apple-orb {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0.5;
+}
+
+.apple-orb-left {
+  top: -140px;
+  left: -140px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #c6e2ff 0%, #dfebff 40%, transparent 72%);
+}
+
+.apple-orb-right {
+  top: 30%;
+  right: -180px;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #d4dcff 0%, #e8ecff 45%, transparent 74%);
+}
+
+.apple-hero {
+  animation: riseIn 0.55s ease-out;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px) scale(0.985);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.bg-white.rounded-xl.shadow-sm.border.border-gray-200.p-6 {
+  border-color: rgba(226, 232, 240, 0.75);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.86) 100%);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+input, textarea, select {
+  transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.13) !important;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.992);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .apple-orb-left,
+  .apple-orb-right {
+    opacity: 0.28;
+  }
+
+  .inline-flex.rounded-full.border.border-slate-200.bg-slate-100\/70.p-1.text-sm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+}
