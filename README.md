@@ -207,5 +207,21 @@ Recommended actions:
 - API: `docs/API.md`
 - Deployment: `docs/DEPLOYMENT.md`
 
+## UI Screenshots
+
+Add your screenshots to `docs/images/` with the filenames below (already linked for GitHub homepage rendering):
+
+1. `docs/images/landing-management.png`
+2. `docs/images/landing-engineers.png`
+3. `docs/images/workspace-hero.png`
+4. `docs/images/generation-status.png`
+
+Preview block:
+
+![Landing - Management](docs/images/landing-management.png)
+![Landing - Engineers](docs/images/landing-engineers.png)
+![Workspace Hero](docs/images/workspace-hero.png)
+![Generation Status](docs/images/generation-status.png)
+
 ## License
 See `LICENSE`.
